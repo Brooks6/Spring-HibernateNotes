@@ -36,6 +36,24 @@
 
 //inversion of control(IoC)
   1.def: the approach of outsourcing the construction and management of objects
-//
-//
-//
+
+//Spring container
+  1.primary functions: 1)create and manage objects(IoC)
+                       2)inject object's dependencies(dependency injection)
+  2.configuring Spring Container: 1)XML configuration file(legacy, but most legacy apps still use this)
+                                  2)Java Annotations(modern)
+                                  3)Java Source Code(modern)
+  3.spring development process: 1)configure your Spring Beans
+                                2)create a Spring Container
+                                3)retrieve Beans from Spring Container
+  4.Spring container is generically known as ApplicationContext
+  5.e.g.: file:applicationContext.xml
+          <bean id = "myCoach" class = "com.brooks.springdemo.BaseballCoach"></bean><-implement class
+          
+          //create a spring container
+          ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(applicationContext.xml);
+          //retrieve bean from spring container
+          Coach theCoach = context.getBean("myCoach", Coach.class);<-interface
+//Spring Bean
+  1.it's a simply a Java object, when Java objects are created by the Spring container, then Spring refers to them
+    as "Spring Beans". Spring Beans are created from normal Java classes, just like Java objects
