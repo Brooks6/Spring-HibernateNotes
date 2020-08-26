@@ -1,0 +1,39 @@
+//why spring
+  1.initially a simpler and lightweight alternative to J2EE
+  2.provides a large number of helper classes... make things easier
+  3.jMS - java message service
+    RMI - remote method invocation
+    CMP - container managed persistence
+    JCA - java connector architecture
+    JPA - java persistence API
+    JSF - java SERVER FACES
+    JAXB - java API for XML binding
+    JAX-WS - java web services(SOAP)
+    JAX-RS - java web services(REST)
+    CDI - context dependency injection(IOC)
+    JMS - java message service
+  4.founder of Spring - Rod Johnson
+  5.EJB 3 released, a rewrite for ease of use(java EE 5, 2006)
+    EJB 3.1 was much easier to use(java EE 6, 2009)
+    
+//Spring 5 update
+  1.what's new in Spring 5: 1)updated minimum requirements for java 8 or higher
+                            2)deprecated legacy integration for: Tiles, Velocity, Portlet, Guava etc
+                            3)upgraded Spring MVC to use new versions of Servlet API 4.0
+                            4)added new reactive programming framework: Spring WebFlux
+                            (www.luv2code.com/spring-5-whats-new)
+
+//Spring core framework
+  1.core container: beans, core, SpEL, context
+  2.infrastructure: AOP(aspect oriented programming: add functionality to objects declaratively), aspects, 
+    instrumentation, messaging
+  3.data access layer: JDBC(JDBC helper classes: reduce your JDBC code by 50%), ORM(object to relational mapping:
+    integration with Hibernate and JPA), transactions(add transaction support: makes heavey use of AOP behind the
+    scenes), OXM or JMS(java message service: for sending async messages to a message broker, Spring provides helper 
+    classes for JMS)
+  4.web layer:servlet, websocket, web, portlet
+  5.test layer:unit, integration, mock
+//
+//
+//
+//
