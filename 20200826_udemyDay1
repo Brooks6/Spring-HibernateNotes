@@ -33,7 +33,9 @@
     classes for JMS)
   4.web layer:servlet, websocket, web, portlet
   5.test layer:unit, integration, mock
-//
+
+//inversion of control(IoC)
+  1.def: the approach of outsourcing the construction and management of objects
 //
 //
 //
