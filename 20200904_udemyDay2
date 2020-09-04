@@ -1,0 +1,34 @@
+//spring dependency injection
+  1.primary functions of spring container:1)create and manage objects(inversion of control) 
+                                          2)inject object's dependencies(dependency injection)
+  2.injection types:1) constructor injection
+                    2) setter injection
+  3.development process - constructor injection:1)define the dependency interface and class
+                                                2)create a constructor in your class for injections
+                                                3)configure the dependency injection in spring config file
+
+//setter injection
+  1.def: inject dependencies by calling setter method(s) on your class
+  2.develooent process - setter injection:1)create setter method(s) in your class for injection
+                                          2)configure the dependency injection in spring config file
+                                          
+//injecting values from a properties file
+  1.create properties file
+  2.load properties file in spring config file
+  3.reference values from properties file
+  
+//bean scopes
+  1.def: scope erfers to the lifecycle of a bean
+        (e.g. how long does the bean live? how many instances are created? how is the bean shared)
+  2.additional spring bean scopes: 1)singleton: create a single shared instance of the bean, default scope
+                                   2)prototype: creates a new bean instance for each container request
+                                   3)request: scoped to an HTTP web request, only used for web apps
+                                   4)session: scoped to an HTTP web session, only used for web apps
+                                   5)global-session: scoped to a global HTTP web session, only used for web apps
+
+//bean lifecycle
+  1.process: container started -> bean instantiated -> dependencies injected -> internal spring processing -> 
+             your custom init method -> bean is ready for use and container is shutdown -> your custom destroy
+             method -> STOP!
+  2.development process: 1)define your methods for init and destroy
+                         2)configure the method names in spring config file
