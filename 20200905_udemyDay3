@@ -1,0 +1,8 @@
+//annotations overview - component scanning
+  1.what are java annotations: 1)special lables/markers added to java classes
+                               2)provide meta-data about the class
+                               3)processed at compile time or run-time for special processing
+  2.development process: 1)enable component scanning in spring config file
+                         2)add the @component annotation to your java classes
+                         3)retrieve bean from spring container
+// 
