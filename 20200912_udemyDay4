@@ -1,0 +1,49 @@
+//which injection type should you use
+  1.spring injection types: 1)constructor injection
+                            2)setter injection
+                            3)field injection
+  2.CHOOSE A STYLE: stay consistent in your project
+
+//qualifiers for Dependency Injection
+  1.autowiring: opps which one should be injected???
+  2.e.g. @Autowired
+         @Qualifier("happyFortuneService") //defalut name of HappyFortuneService class
+  3.can apply @Qualifier annotation to all injection types
+
+//scope annotation
+  1.e.g. @Component
+         @Scope("singleton")
+         
+//bean lifecycle method annotation
+  1.development process: 1)define your methods for init and destroy
+                         2)add annotations: @PostConstruct and @PreDestroy
+                         
+//spring configuration with java code (no xml) 
+  1.java configuration: 1)instead of configuring spring container using XML
+                        2)configure the spring container with java code
+  2.development process: 1)create a java class and annotate as @Configuration
+                         2)add component scanning support: @ComponentScan(optional)
+                         3)read spring java configuration class
+                         4)retrieve bean from spring container
+                         
+//defining spring beans with Java Code (no xml)
+  1.development method to expose bean: 1)define method to expose bean
+                                       2)inject bean dependencies
+                                       3)read spring java configuration class
+                                       4)retrieve bean from spring container
+
+//Injecting Values from Properties File
+  1.development process: 1)create properties file
+                         2)load properties file in spring config
+                         3)reference values from properties file
+  2.@PropertySource("classpath:sport.properties")
+  
+//spring MVC overview
+  1.def: 1)framework for building web application in java
+         2)based on Model-View-Controller design pattern
+         3)leverages features of the Core Spring Framework(Ioc, DI)
+  2.spring MVC benefits: 1)the spring way of building web app UIs in java
+                         2)leverage a set of reusable UI components
+                         3)help manage application state for web requests
+                         4)process form data: validation, conversion etc
+                         5)flexible configuration for the view layer
