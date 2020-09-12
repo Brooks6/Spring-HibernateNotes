@@ -47,3 +47,26 @@
                          3)help manage application state for web requests
                          4)process form data: validation, conversion etc
                          5)flexible configuration for the view layer
+
+//spring MVC - behind the scenes
+  1.components of a spring MVC application: 1)a set of web pages to layout UI components
+                                            2)a collection of spring beans(controllers, services, etc...)
+                                            3)spring configuration(XML, annotations or java)
+  2.spring MVC front controller: known as dispatcherServlet - 1)part of the spring framework
+                                                              2)already developed by spring dev team
+    you will create: 1)Model objects
+                     2)View templates
+                     3)Controller classes
+  3.Controller: contains your business logic - 1)handle the request
+                                               2)store/retrieve data(db, web service...)
+                                               3)place data in model
+    send to appropriate view template
+  4.Model: contains your data
+    store/retrieve data via backend systems: 1)database, web service, etc...
+                                             2)use a spring bean if you like
+    place your data in the model(data can be any java object/ collection)
+  5.View template: most common is JSP+JSTL, used by developer to creates a page to display data
+    JSP: Java Server Pages
+    JSTL: JSP Standard Tag Library
+    other view templates supported: thymeleaf, groovy, velocity, freemarker, etc...
+  6.
