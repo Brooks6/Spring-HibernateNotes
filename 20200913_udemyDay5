@@ -2,8 +2,8 @@
 1.spring mvc configuration process - part 1: add configurations to file: WEB-INF/web.xml
                                             1)configure spring MVC disatcher servlet
                                             2)set up url mappings to spring MVC dispatcher servlet
-2.spring mvc configuration process - part 2: add configurations to file: WEB-INF/spring-mvc-demo-servlet.
-                                             xml
+2.spring mvc configuration process - part 2: add configurations to file: WEB-INF/spring-mvc-demo-
+                                             servlet.xml
                                             3)add support for spring component scanning
                                             4)add suport for conversion, formatting and validation
                                             5)configure spring MVC view resolver
