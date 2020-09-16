@@ -1,4 +1,37 @@
-//Adding Data to the Spring Model
+// Adding Data to the Spring Model
   1.spring model: 1)the model is a container for you application data
-                  2)in your controller: -
-                  3)
+                  2)in your controller: a.you can put anything in the model
+                                        b.strings, objects, info from database, etc
+                  3)your view page(JSP) can access data from the model
+  2.code example: 1)we want to create a new method to process form data
+                  2)read the form data: student's name
+                  3)convert the name to upper
+                  4)add the uppercase version to the model
+
+// Binding Request Params
+  1.e.g. public String letsShoutDude(@RequestPara("studentName" String name, Model model)){}
+  
+// Spring MVC Form Tags
+  1.form tags will generate HTML for you: 1)form: form
+                                          2)form: input
+                                          3)form: textarea
+                                          4)form: checkbox
+                                          5)form: radiobutton
+                                          www.luv2code.com/spring-mvc-form-tags
+  2.jsp page with special spring mvc form tags: <html>
+                                                ...regular html...
+                                                ...spring mvc form tags...
+                                                ...more html...
+                                                </html>
+
+// Text Fields
+  1.development process: 1)create Student class
+                         2)create student controller class
+                         3)create html form
+                         4)create form processing code
+                         5)create confirmation page
+                         
+//Drop-Down Lists, Radio Buttons, Checkboxes 
+  1.development process: 1)update html form
+                         2)update student class - add getter/setter for new property
+                         3)update confirmation page
