@@ -1,0 +1,37 @@
+//Spring MVC Form Validation
+  1.spring version 4 and higher supports bean validation API
+  2.bean validation features: 1)required
+                              2)validate length
+                              3)validate numbers
+                              4)validate with regular expressions
+                              5)custom validation
+  3.validation annotations: 1)@NotNull: checks that the annotated value is not null
+                            2)@Min: must be a number >= value
+                            3)@Max: must be a number <= value
+                            4)@Size: size must mach the given size
+                            5)@Pattern: must match a regular expression pattern
+                            6)@Future/@Past: date must be in future or past of given date
+                            7)others
+  4.our road map: 1)set up our development environment
+                  2)required field
+                  3)validate number range: min, max
+                  4)validate using regular expression(regexp)
+                  5)custom validation
+  
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
