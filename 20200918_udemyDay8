@@ -1,0 +1,39 @@
+//Checking for Required Fields, Validating a Number Range
+  1.development process: 1)add validation rule to customer class
+                         2)display error messages on html form
+                         3)perform validation in the controller class
+                         4)update confirmation page
+
+//Add Pre-processing Code with @InitBinder
+  1.@InitBinder: annotation works as a pre-processor, it will pre-process each web request to our controller,
+                 Method annotated with @InitBinder is executed
+
+//How to Handle String input for Integer Fields
+  1.development process: 1)create custom error message
+                           src/resourfes/messages.properties
+                         2)load custom messages resource in spring config file
+                           WebContent/WEB-INF/spring-mvc-demo-servlet.xml
+
+//Custom Form Validation
+  1.custom validation: perform custom validation based on your business rules, Spring MVC calls our custom
+                       validation, custom validation return boolean value for pass/fail(true/false)
+  2.development process: 1)create custom validation rule: a.create @CourseCode annotation
+                                                          b.create CourseCodeConstraintValidator
+                         2)add validation rule to customer class
+                         3)display error messages on html form
+                         4)update confirmation page
+  
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
