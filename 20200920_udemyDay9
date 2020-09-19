@@ -1,5 +1,9 @@
-//
-//
+// Hibernate Overview
+  1.what is hibernate: a framework for persisting/saving java objects in a database(www.hibernate.org)
+  2.object-to-relational mapping(ORM): the developer defines mapping between java class and database table
+  
+// Hibernate and JDBC
+  1.hibernate uses JDBC for all databse communications
 //
 //
 //
