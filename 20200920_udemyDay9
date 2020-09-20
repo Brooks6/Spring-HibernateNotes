@@ -59,10 +59,3 @@
                              be detached
                    5)MERGE: if entity is merged, then related entity will also be merged
                    6)ALL: all of above cascade types
-
-//
-//
-//
-//
-//
-//
