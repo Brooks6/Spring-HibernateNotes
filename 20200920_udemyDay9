@@ -4,15 +4,62 @@
   
 // Hibernate and JDBC
   1.hibernate uses JDBC for all databse communications
-//
-//
-//
-//
-//
-//
-//
-//
-//
+  
+// Hibernate Development Environment
+  1.to build hibernate applications, you need the following: 1)java integrated development environment(IDE)
+                                                             2)database server
+                                                             3)hibernate jar files and jdbc driver
+
+// Setting up Hibernate in Eclipse
+  1.to do list: 1)create eclipse project
+                2)download hibernate files
+                3)download MySQL JDBC driver
+                4)add JAR files to Eclipse project...build path
+                
+// Hibernate Development Process
+  1.to do list: 1)add hibernate configuration file
+                2)annotate java class
+                3)develop java code to perform database operations
+                
+// hibernate Annotations
+    1.two options for mapping: 1)xml config file(legacy)
+                               2)java annotations(modern, preferred)
+    2.java annotations: 1)map class to database table
+                        2)map fields to dabase columns
+                        
+// Primary Keys - Changing the Starting Index
+  1.ALTER TABLE hb_student_tracker.student AUTO_INCREMENT = 3000
+  2.truncate hb_student_tracker.student(reset)
+  
+// Querying Objects with Hibernate
+  1.hibernate query language(HQL): for retrieving objects and similar in nature to SQL(where, like, order by
+                                   , join, in, etc)
+
+// Advanced Mappings
+  1.types: 1)one-to-one: an instructor can have an "instructor detail" entity, similar to an "instructor 
+                         profile"
+           2)one-to-many, many-to-one: an instructor can have many course
+           3)many-to-many
+           
+// Database Concepts
+  1.cascade: you can cascade operations, apply the same operation to related entities. If we delete an
+             instructor, we should also delete their instructor_detail, this is known as "CASCADE DELETE"
+  2.fetch types: 1)eager loading: will retrieve everything
+                 2)lazy loading: will retrieve on request
+
+// @OneToOne
+  1.development process - one-to-one: 1)prep work - define database tables
+                                      2)create instructordetail class
+                                      3)create instructor class
+                                      4)create main app
+  2.cascade types: 1)PERSIST: if entity is persisted/saved, related entity will also be persisted
+                   2)REMOVE: if entity is removed/deleted, related entity will also be deleted
+                   3)REFRESH: if entity is refreshed, related entity will also be refreshed
+                   4)DETACH: if entity is detached(not associated w/ session), then related entity will also
+                             be detached
+                   5)MERGE: if entity is merged, then related entity will also be merged
+                   6)ALL: all of above cascade types
+
 //
 //
 //
