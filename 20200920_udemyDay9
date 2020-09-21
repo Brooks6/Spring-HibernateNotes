@@ -46,16 +46,3 @@
              instructor, we should also delete their instructor_detail, this is known as "CASCADE DELETE"
   2.fetch types: 1)eager loading: will retrieve everything
                  2)lazy loading: will retrieve on request
-
-// @OneToOne
-  1.development process - one-to-one: 1)prep work - define database tables
-                                      2)create instructordetail class
-                                      3)create instructor class
-                                      4)create main app
-  2.cascade types: 1)PERSIST: if entity is persisted/saved, related entity will also be persisted
-                   2)REMOVE: if entity is removed/deleted, related entity will also be deleted
-                   3)REFRESH: if entity is refreshed, related entity will also be refreshed
-                   4)DETACH: if entity is detached(not associated w/ session), then related entity will also
-                             be detached
-                   5)MERGE: if entity is merged, then related entity will also be merged
-                   6)ALL: all of above cascade types
