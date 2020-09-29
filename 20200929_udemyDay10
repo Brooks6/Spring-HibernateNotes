@@ -1,0 +1,32 @@
+// @OneToOne - Bi-Directional 
+  1.development process: 1)make updates to InstructorDetail class: a.add new field to reference Instructor
+                                                                   b.add getter/setter methods for Instructor
+                                                                   c.add @OneToOne annotation
+                         2)create main app
+  2.mappedBy tells Hibernate: 1)look at the instructorDetail property in the Instructor class
+                              2)use information from the Instructor class @JoinColumn
+                              3)to help find associated instructor
+  
+// @OneToMany - Bi-Directional
+  1.development process: 1)prep work - define databse tables
+                         2)create course class
+                         3)update instructor class
+                         4)create main app
+  
+// Eager vs Lazy Loading 
+  1.when we fetch / retrieve data, should we retrieve ENERYTHING?: 1)eager will retrieve everything
+                                                                   2)lazy will retrieve on request
+  2.only load data when absolutely needed, prefer lazy loading instead of eager loading
+  3.default fetch types: 1)OneToOne: FetchType.EAGER
+                         2)OneToMany: LAZY
+                         3)ManyToOne: EAGER
+                         4)ManyToMany: LAZY
+  4.more about lazy loading: when you lazy load, the data is only retrieved on deman, however, this requires
+    an open hibernate session, need an connection to database to retrieve data
+    
+// @ManyToMany 
+  1.join table: a table that provides a mapping between two tables. It has foreign keys for each table to
+    define the mapping relationship
+  2.more about @JoinTable: 1)look at the course_id column in the course_student table
+                           2)for other side(inverse), look at the stuent_id column in the course_stuent table
+                           3)use this information to find relationship between course and students
